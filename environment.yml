@@ -1,0 +1,27 @@
+# Conda environment for facade-agent (interpretable multimodal facade defect agents).
+# Create: conda env create -f environment.yml
+# Activate: conda activate facade-agent
+name: facade-agent
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch>=2.1.0
+      - transformers>=4.45.0
+      - peft>=0.12.0
+      - datasets>=2.16.0
+      - accelerate>=0.33.0
+      - safetensors>=0.4.0
+      - openai>=1.40.0
+      - Pillow>=10.0.0
+      - numpy>=1.24.0
+      - sentence-transformers>=3.0.0
+      - pypdf>=4.0.0
+      - nltk>=3.8.0
+      - rouge-score>=0.1.2
+      - bert-score>=0.3.13

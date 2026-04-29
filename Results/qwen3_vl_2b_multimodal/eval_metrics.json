@@ -1,0 +1,393 @@
+{
+  "num_eval": 45,
+  "text_metrics": {
+    "bleu4": 0.045347807853875384,
+    "rougeL": 0.22054108984717047,
+    "bertscore_precision": 0.7653631567955017,
+    "bertscore_recall": 0.675923228263855,
+    "bertscore_f1": 0.71772700548172,
+    "bertscore_model": "Qwen/Qwen3-Embedding-0.6B"
+  },
+  "defect_type_metrics": {
+    "precision_macro": 0.6177248677248189,
+    "recall_macro": 0.8314176245207151,
+    "f1_macro": 0.6489326765183644
+  },
+  "severity_metrics": {
+    "precision_macro": 0.7925925925925373,
+    "recall_macro": 0.7745098039215167,
+    "f1_macro": 0.7772435897430418
+  },
+  "defect_type_metrics_labels": [
+    "Crack",
+    "Glass Anomaly (Spot)",
+    "Unspecified defect"
+  ],
+  "severity_metrics_labels": [
+    "MINOR",
+    "MODERATE",
+    "MAJOR"
+  ],
+  "detail": [
+    {
+      "image_id": "DJI_20251003085247_0035_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Crack.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe image shows a glass facade with a grid pattern, and the thermal image reveals localized areas of MODERATE heat emission. The defect is located at the center of a grid cell, with a visible thermal anomaly. The defect is not clearly visible in the RGB image, but the thermal image shows a distinct area of elevated temperature, which is indicative of a potential issue with the glass or the surrounding structure. The defect is located at the center of a grid cell, and the thermal image shows a localized area of MODERATE heat emission. The defect is not clearly visible in the RGB image, but the thermal image shows a distinct area of elevated temperature, which is indicative of a potential issue with the glass or the surrounding structure. The defect is located at the center of a grid cell, and",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Crack",
+      "severity_true": "MAJOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0073_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized area of thermal anomaly in the window frame, visible in the thermal image. The anomaly is concentrated in the lower-left and lower-right window panes, with a distinct hot spot in the lower-right window. The thermal image shows a significant temperature difference between the window and the surrounding wall, indicating a potential heat leak or insulation failure. The defect is not visible in the RGB image, but the thermal signature suggests a thermal bridge or a defect in the window seal.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly indicates a potential heat loss, which could lead to increased energy consumption and reduced building efficiency. However, the defect is localized and does not appear to be causing immediate structural damage or safety hazards.",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0003_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized area of discoloration and surface degradation on the facade, visible in both the RGB and thermal images. The thermal image shows a significant temperature difference, with the affected region appearing as a warm, orange-to-red zone, indicating a potential thermal anomaly. The defect is located on the upper portion of the facade, near the window frame, and is consistent with a surface coating or material degradation. The area is not clearly defined by a bounding box, but the defect is present in the region of the facade zone labeled F3.  \n\n- Risk Level  \n  The defect is classified as MODERATE due to the presence of a thermal anomaly and visible surface degradation. The thermal image suggests a localized heat source, which could be indicative of a moisture",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0017_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Crack\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a thermal anomaly visible in the thermal image, where the window frame is emitting significantly higher heat than the surrounding wall. This is indicated by the bright orange and red coloration around the window, which is a clear sign of heat loss or poor insulation. The defect is located at the window frame, which is a common area for thermal bridging and insulation failure. The presence of a visible crack in the wall (in the RGB image) may be related to structural or thermal stress, but the primary evidence is the thermal signature.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly suggests a potential for energy loss and increased heating in the building, which can lead to higher energy costs and reduced comfort. While",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0039_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe defect is located on the concrete parapet of the building's rooftop, which appears to be a structural or architectural feature. The area is visible in the RGB image as a flat, light-colored concrete surface with a slightly uneven texture. The thermal image reveals a significant temperature difference, with the surface showing a MODERATE thermal emission (orange and red hues), indicating a potential heat source or heat retention issue. The defect is not clearly visible in the thermal image, but the temperature anomaly suggests a possible issue with the surface's thermal properties.  \n\n- Risk Level  \nThe defect is classified as MINOR due to the absence of visible structural damage or significant thermal anomalies. The thermal image shows a localized temperature increase, which may indicate a minor heat retention issue, but it does not appear",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0051_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Unspecified defect.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized thermal anomaly visible in the thermal image, specifically in the window panes at the lower-left and upper-right sections. The area shows elevated temperatures (orange and red) compared to the surrounding regions, indicating a heat leak or insulation failure. The defect is confined to a small, rectangular region within the window frame, consistent with a thermal bridge or poor insulation. The presence of a visible crack in the concrete wall adjacent to the window suggests a potential structural or thermal issue.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly indicates a potential heat loss, which could lead to increased energy consumption and reduced building efficiency over time. While the defect is localized and does not appear to be causing immediate structural damage,",
+      "defect_true": "Crack",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0023_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe defect is a thermal anomaly observed in the window frame, which appears as a bright orange-yellow region in the thermal image. This indicates a localized heat source, likely due to a thermal bridge or a defect in the window seal. The defect is located at the center of the window, with a clear boundary and a distinct temperature difference from the surrounding wall. The window frame is a rectangular structure, and the anomaly is confined to the frame itself, suggesting a localized issue rather than a structural failure.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure or significant energy loss, but it may lead to long-term thermal inefficiency and potential condensation issues if left unaddressed. The defect",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0078_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized area on the facade of the building, located in the lower portion of the image, near the ground level. The area is a dark, wet patch on the concrete surface, which is visible in both the RGB and thermal images. The thermal image shows a significant temperature difference, with the defect region appearing cooler than the surrounding area, indicating a possible moisture or thermal insulation issue. The defect is not a structural or paint-related issue, but rather a surface condition that may be related to water accumulation or poor thermal performance.  \n\n- Risk Level  \n  The risk level is MODERATE. The defect is not immediately hazardous, but it could lead to increased moisture infiltration, which may result in long-term damage to the building envelope, including potential mold",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0025_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Crack\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a visible crack in the concrete facade, primarily located in the upper portion of the wall, near the window. The crack is most prominent in the RGB image, where the surface appears discolored and uneven. The thermal image shows a localized area of elevated temperature, which is consistent with a thermal bridge or a moisture-related issue. The crack is not a large, continuous fissure but rather a small, linear crack that appears to be spreading slightly. The crack is located within the area F3, which is a large, flat section of the facade, and is positioned at a height of 55.3 meters above the ground. The crack is not directly adjacent to any window or structural element, but it is near the window frame,",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0006_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nA small, localized discoloration is visible on the facade near the right window, located in the upper right quadrant of the image. The defect appears as a brownish, slightly raised patch on the granite tile surface, with a rough texture and irregular edges. The thermal image shows a localized area of higher temperature (in the red/orange region) adjacent to the defect, indicating a possible thermal anomaly. The defect is not clearly visible in the RGB image, but the thermal signature suggests a potential issue with the surface material or a moisture-related issue.  \n\n- Risk Level  \nThe defect is classified as MODERATE due to its visible thermal anomaly and potential impact on the building's thermal performance. The thermal signature suggests a localized heat source, which could lead to increased energy",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0007_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Glass Anomaly (Spot)\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Glass Anomaly (Spot).]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a thermal anomaly observed in the window area of the facade. The thermal image shows a significant temperature difference between the window and the surrounding wall, with the window region appearing as a bright orange-yellow hotspot. This indicates a localized heat source, likely due to a defect in the window's insulation or a thermal bridge. The window is located at the center of the image, with a bounding box of [0.644, 0.466, 0.123, 0.092], which is consistent with the provided coordinates. The defect is not a structural issue but a thermal one, as evidenced by the temperature difference.  \n\n- Risk Level  \n  The risk level is MODERATE. The",
+      "defect_true": "Crack",
+      "defect_pred": "Glass Anomaly (Spot)",
+      "severity_true": "MAJOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0061_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Crack\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe thermal image reveals elevated temperatures in the window frames, specifically in the upper right and lower left regions. These areas show intense orange and red hues, indicating localized heat buildup. The defect is confined to the window frames, which are part of the facade structure. The presence of thermal anomalies suggests a potential issue with the thermal insulation or the window sealant, possibly due to moisture or poor thermal performance.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly, while not severe, indicates a potential for energy inefficiency and possible long-term structural or thermal performance degradation. The defect is localized and does not appear to be spreading, but it could lead to increased energy costs and reduced building comfort if left unaddressed.  \n\n- Cause Analysis",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0049_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Glass Anomaly (Spot)\n\nTask A — explainable analysis:  \n- Defect Identification  \n  The defect is a localized thermal anomaly observed in the thermal image, specifically in the window panes at the upper portion of the facade. The thermal signature shows elevated temperatures (orange-red) in the upper right window pane, while the rest of the window and surrounding area appear cooler (purple). This indicates a localized heat source or insulation failure. The defect is confined to a small area within the window frame, and the thermal pattern is consistent with a localized heat leak or poor thermal insulation.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure or significant energy loss, but it may lead to increased energy consumption and potential condensation if not addressed. The defect is located on a",
+      "defect_true": "Glass Anomaly (Spot)",
+      "defect_pred": "Glass Anomaly (Spot)",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0089_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nA small, dark, circular defect is visible on the facade, located at the center of the image. The defect is situated in the middle of a window frame, within a square tile. The defect is not clearly visible in the RGB image, but it is highlighted in the thermal image as a small, dark spot. The thermal image shows a small, dark area with a temperature difference from the surrounding surface, indicating a potential thermal anomaly. The defect is located at the center of the window frame, which is a common location for structural or material defects.  \n\n- Risk Level  \nThe defect is classified as MODERATE due to its size and location. The defect is small and does not appear to be causing significant thermal or structural issues. However, the thermal anomaly may",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0010_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Crack\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized thermal anomaly in the window frame area, visible in the thermal image as a bright orange region. This indicates a significant heat loss or poor thermal performance. The defect is located at the window frame, which is a common area for thermal bridging and insulation failure. The presence of a visible thermal contrast suggests a defect in the insulation material or a compromised seal around the window. The defect is not a structural issue but a thermal performance issue.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure or safety hazards, but it can lead to increased energy consumption and reduced building efficiency over time. This may result in higher operational costs and potential discomfort for occupants.  \n\n- Cause",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0083_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Glass Anomaly (Spot)\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Glass Anomaly (Spot).]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a visible darkened area on the facade, located in the upper portion of the building, near the window. The area is a rectangular region with a darkened appearance, which is more pronounced in the thermal image. The defect is located in the upper right corner of the building, and the thermal image shows a significant temperature difference, indicating a possible thermal issue. The defect is not a structural issue, but rather a surface condition that may be related to moisture or material degradation.  \n\n- Risk Level  \n  The risk level is moderate due to the visible darkening of the surface, which may indicate a potential moisture-related issue. The defect is not severe enough to cause immediate structural failure, but it could lead to long-term degradation if not addressed.",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Glass Anomaly (Spot)",
+      "severity_true": "MINOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0022_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The image shows a visible crack in the concrete facade, located at the lower portion of the wall, near the window frame. The crack is narrow and appears to be a linear fissure, extending from the lower-left corner of the window to the right side of the wall. The thermal image reveals a localized area of elevated temperature, indicating a possible thermal stress or moisture-related issue. The crack is not extensive, but it is present in a region that is part of the building's structural envelope.  \n\n- Risk Level  \n  The defect is classified as MODERATE due to the presence of a visible crack that may compromise the structural integrity of the facade. While the crack is not large enough to cause immediate structural failure, it could lead to moisture infiltration, thermal stress,",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0074_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe image shows a window on the 13th floor of a building, with a visible thermal image showing a significant temperature difference between the window and the surrounding wall. The window is emitting a MODERATE level of heat, indicating a potential thermal bridge or heat loss. The thermal image also shows a distinct area of MODERATE heat on the window, which is likely due to a defect in the window's insulation or seal. The window is located in a section of the building with a stone facade, and the window frame is visible. The window is also located in a section of the building with a stone facade, and the window frame is visible. The window is also located in a section of the building with a stone facade, and the window frame is visible. The window is",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0045_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The thermal image shows a localized area on the facade with elevated temperature, indicated by the orange and red hues, while the surrounding panels appear cooler. This is a thermal anomaly, likely due to a defect in the glass panel. The defect is located in the upper right portion of the image, which corresponds to the area of the building facade. The defect is not visible in the RGB image, but the thermal image reveals a temperature difference that suggests a potential issue with the glass.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly indicates a potential issue with the glass panel, which could lead to reduced thermal performance or increased energy consumption. However, the defect is not severe enough to cause immediate structural failure or safety hazards.",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0021_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized thermal anomaly in the window frame, visible as a bright orange-yellow region in the thermal image. This area is distinct from the surrounding wall, which appears cooler and more uniform in temperature. The anomaly is confined to the window frame and is not a large-scale surface defect. The defect is not visible in the RGB image, but the thermal signature indicates a localized heat source, likely due to a thermal bridge or poor insulation.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly is not causing immediate structural failure or heat loss, but it may indicate a potential issue with the window seal or insulation. This could lead to increased energy consumption or reduced thermal performance over time, especially in a MODERATE-occupancy",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0001_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Crack.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The image shows a dark-colored vehicle parked on a paved area adjacent to a building. The vehicle is positioned near a vertical column, and the area of interest is the facade of the building. The thermal image reveals a warm, glowing region on the building's surface, which is likely a heat source. The defect is located at the base of the column, where the thermal image shows a localized area of elevated temperature. The defect is not clearly visible in the RGB image, but the thermal image highlights a potential issue. The defect is located at the base of the column, where the thermal image shows a localized area of elevated temperature. The defect is not clearly visible in the RGB image, but the thermal image highlights a potential issue. The defect is located at the base of",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Crack",
+      "severity_true": "MAJOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0086_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a small, localized area of discoloration and thermal anomaly on the facade of a building. The thermal image shows a distinct hot spot on the right window, with a corresponding visible anomaly in the RGB image. The defect is located on the upper portion of the window frame, which is consistent with a potential issue related to the window's seal or the surrounding structure. The defect is not a large-scale structural failure but appears to be a localized surface issue.  \n\n- Risk Level  \n  The risk level is MODERATE. The defect is not causing immediate structural failure or heat loss, but it may lead to reduced thermal performance and potential long-term degradation of the window seal. This could affect the building's energy efficiency and comfort, especially in a MODERATE",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0058_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe thermal image reveals elevated temperatures in the window frames, specifically in the upper two windows. The thermal signature shows a significant heat gradient, with the window frames appearing as bright orange and red, indicating localized heat buildup. This is consistent with a thermal defect, likely due to a thermal bridge or poor insulation. The defect is located in the upper portion of the facade, within the window frame area, and is visible in both the RGB and thermal images. The defect is not a structural issue but a thermal one, which may be due to a material defect or poor sealing.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure, but it may lead to increased energy consumption and potential condensation",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0084_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe defect is a vertical pipe protruding from the facade, located at the upper-left corner of the building. The pipe is visibly rusted and peeling, with a red-brown coloration and white paint remnants. The pipe is aligned vertically and appears to be attached to the wall, possibly a drainage or vent pipe. The thermal image shows a significant temperature difference, with the pipe being much hotter than the surrounding wall, indicating a potential heat source. The pipe is located at the edge of the building, and its position is consistent with a structural or mechanical component.  \n\n- Risk Level  \nThe risk level is moderate due to the presence of a visible structural or mechanical component that may be prone to failure. The pipe's condition suggests potential for corrosion and leakage, which",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0054_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Glass Anomaly (Spot)\n\n[Interpretation aligned to headline: severity treated as MAJOR; defect category as Glass Anomaly (Spot).]\n\nTask A — Explainable Diagnosis  \n\n- Defect Identification  \nThe defect is a localized area of thermal anomaly in the window frames, visible in the thermal image as elevated surface temperatures. The defect is located in the lower portion of the facade, within the window frame, and is consistent with a thermal bridge or heat loss through the window frame. The defect is not a structural issue but rather a thermal performance issue. The defect is located in the window frame, and the thermal image shows a significant temperature difference between the window frame and the surrounding wall. The defect is not a structural issue but rather a thermal performance issue. The defect is located in the window frame, and the thermal image shows a significant temperature difference between the window frame and the surrounding wall. The defect is not a structural issue but rather a thermal performance issue. The defect",
+      "defect_true": "Crack",
+      "defect_pred": "Glass Anomaly (Spot)",
+      "severity_true": "MODERATE",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0026_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Crack\n\nTask A — Explainable Analysis\n\n- Defect Identification  \n  The defect is a visible crack in the concrete facade, located on the lower portion of the wall, specifically in the area corresponding to the window frame. The crack is most prominent in the lower-left corner of the window, with a clear linear path extending from the lower-left to the upper-right of the window. The thermal image shows a significant temperature difference, with the window area being much hotter than the surrounding concrete, indicating a possible thermal stress or moisture-related issue. The crack is not a structural failure but appears to be a surface-level issue, possibly due to poor construction or material degradation.\n\n- Risk Level  \n  The defect is classified as MODERATE due to the visible crack, which may lead to reduced structural integrity over time. The crack is not large enough",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0079_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized area of discoloration and thermal anomaly on the facade, visible in both the RGB and thermal images. The thermal image shows a distinct temperature gradient, with a warm zone extending from the window frame down to the wall, indicating a possible heat source or material degradation. The area is located on the facade at coordinates (X=35.24, Y=23.02, Z=33.08) and is associated with the area tag F2. The defect is not a structural issue but appears to be a surface-level issue, possibly due to material degradation or moisture ingress.  \n\n- Risk Level  \n  The risk level is MODERATE. The defect is not causing immediate structural failure, but it may",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0065_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The thermal image shows two square regions with MODERATE thermal emission (orange) within the window frames, indicating localized heat retention. The defect is located in the window frames, which are part of the facade. The thermal signature is consistent with a thermal bridge or a poorly insulated window frame, which can lead to heat loss. The defect is not visible in the RGB image, but the thermal image highlights the area where the heat is being retained.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly suggests a potential for heat loss, which can lead to increased energy consumption and reduced comfort. However, the defect is localized and does not appear to be causing significant structural issues.  \n\n- Cause Analysis  \n  The cause is likely a thermal",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0030_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\nTask A — Explainable Diagnosis  \n\n- Defect Identification  \nThe defect is a localized thermal anomaly observed in the window pane, visible in the thermal image as a region of elevated temperature (orange and red) within the window frame. This area is located at the center of the window, with a clear boundary and distinct thermal signature. The defect is confined to a small, rectangular region within the window, and its presence is consistent across the thermal image. The defect is not a structural issue but a thermal issue, likely due to a defect in the window pane or a thermal bridge.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly is localized and does not appear to be spreading or causing significant heat loss. However, the presence of a thermal anomaly in a window pane can lead to increased energy",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0028_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\n[Interpretation aligned to headline: severity treated as MINOR; defect category as Unspecified defect.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized thermal anomaly observed in the thermal image (image 2) that appears as a bright orange-yellow region within the window frame. This area is located at the center of the window, with a distinct temperature difference from the surrounding wall. The anomaly is confined to a small rectangular region, consistent with a localized heat source or insulation failure. The defect is not visible in the RGB image, but the thermal signature is clearly present. The defect is located at the center of the window frame, which is a common location for thermal issues in building envelopes.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly indicates a potential issue with insulation or thermal bridging, which could lead to increased energy consumption and reduced thermal",
+      "defect_true": "Crack",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0080_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized area on the facade of the building, located at the intersection of the upper wall and the parking area. The defect is visible in the RGB image as a dark, irregular patch on the brown stone surface, and in the thermal image, it appears as a region of elevated temperature, indicating a possible thermal anomaly. The defect is located at the edge of the building, near the window, and is not clearly defined by a structural or material defect. The defect is not a visible crack, but rather a surface irregularity that may be due to a material degradation or a surface coating issue.  \n\n- Risk Level  \n  The risk level is moderate due to the presence of a thermal anomaly, which may indicate a potential issue with the building's thermal",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0087_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The thermal image shows a distinct area of elevated temperature in the lower-left and lower-right window panes, with a clear thermal signature indicating heat retention. This is consistent with a thermal bridge or a localized heat leak. The defect is located in the window area, which is part of the facade zone E3. The presence of a thermal anomaly in a window is a known indicator of potential insulation failure or poor thermal performance.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly suggests a potential issue with the window's insulation, which could lead to increased energy consumption and reduced thermal comfort. While the defect is not severe enough to cause immediate structural failure, it may contribute to long-term energy inefficiency and could be a precursor to",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0005_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe image shows a section of a facade with two windows, each with a decorative metal grille. The area of interest is located at the lower portion of the wall, just above the window frames. The thermal image reveals a significant temperature difference between the window frames and the surrounding wall. The window frames appear to be emitting a higher temperature than the adjacent wall, which is consistent with a thermal bridge or a heat loss issue. The presence of a thermal anomaly suggests that the window frames may be experiencing heat transfer through the wall, which could be due to poor insulation or a structural issue.  \n\n- Risk Level  \nThe risk level is moderate. The thermal anomaly indicates a potential heat loss issue, which could lead to increased energy consumption and reduced comfort in the building. However, the",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0055_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The thermal image shows two distinct, bright orange regions within the window frames, indicating localized heat emission. These areas are located in the upper portion of the facade, corresponding to the window frames. The thermal signature is consistent with a heat source, likely due to a defect in the window frame or sealant. The presence of a thermal anomaly in the window frame suggests a potential issue with the thermal insulation or sealing of the window, which may lead to heat loss or condensation.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure or significant energy loss, but it may contribute to long-term thermal inefficiency and potential condensation issues. This could affect indoor comfort and increase the risk",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0076_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Crack\n\n[Interpretation aligned to headline: severity treated as MAJOR; defect category as Crack.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a visible darkened area on the facade, located in the upper portion of the building, near the window. The thermal image shows a significant temperature difference, with the defect area appearing much cooler than the surrounding wall. This suggests a potential thermal insulation issue or a moisture-related problem. The defect is not a structural or paint-related issue, but rather a surface condition that may be related to material degradation or moisture ingress.  \n\n- Risk Level  \n  The defect is classified as MODERATE due to its visible impact on the building's thermal performance and potential for moisture-related damage. While it does not immediately compromise structural integrity, it could lead to long-term thermal inefficiency and increased risk of moisture accumulation, especially in the context of the building's MODERATE thermal",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Crack",
+      "severity_true": "MODERATE",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0012_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe defect is a small, localized area of discoloration and surface degradation on the facade, visible in the RGB image as a light grayish patch. The thermal image shows a distinct temperature difference, with the affected region appearing warmer than the surrounding areas, indicating a possible thermal anomaly. The defect is located at the intersection of two window frames, and its position is consistent with a structural or material issue. The defect is not a large-scale crack or damage but rather a localized surface issue.  \n\n- Risk Level  \nThe risk level is MODERATE. The defect is not immediately hazardous, but it may contribute to long-term degradation of the facade, especially if the material is susceptible to moisture or thermal stress. The thermal anomaly suggests a potential issue with heat transfer, which",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0070_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nA small, dark, irregularly shaped mark is visible on the concrete facade of the building, located in the upper-left quadrant of the image. The mark is not clearly defined in the RGB image, but it appears as a small, dark spot on the light-colored concrete. The thermal image shows a localized area of elevated temperature, particularly in the upper-left corner, which is consistent with a defect that may be a thermal bridge or a moisture intrusion point. The defect is located in the area labeled E3, which is a concrete panel, and is situated at coordinates X: 65.61, Y: 22.91, Z: 59.94, with an elevation of 59.28. The defect is",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0014_V.jpg",
+      "pred": "Severity: MAJOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis\n\n- Defect Identification  \n  The defect is a visible crack in the concrete facade, located at the upper portion of the building, near the window frame. The crack is horizontal and runs across the surface of the concrete panel. The thermal image shows a significant temperature difference, with the area around the crack being much hotter than the surrounding concrete, indicating a possible thermal stress or moisture-related issue. The crack is not visible in the RGB image, but its presence is inferred from the thermal signature and the structural appearance.\n\n- Risk Level  \n  The defect is classified as MODERATE due to the presence of a visible crack that may compromise the structural integrity of the facade. While the crack is not extensive or deep, it could lead to increased thermal stress, moisture infiltration, or structural failure over time,",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MAJOR",
+      "severity_pred": "MAJOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0018_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Crack\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe defect is a thermal anomaly observed in the window frame, visible in the thermal image as an elevated temperature region within the window's perimeter. The anomaly is localized to the window's frame, which is a structural component of the facade. The thermal image shows a distinct orange-yellow hotspot, indicating a localized heat source, likely due to a thermal bridge or poor thermal insulation. The defect is not a structural failure but a thermal issue, which may be related to material degradation or poor sealing.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly, while not severe, could lead to increased energy consumption and potential long-term thermal performance degradation if left unaddressed. It may also contribute to condensation or moisture buildup, which can affect the",
+      "defect_true": "Crack",
+      "defect_pred": "Crack",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0029_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Unspecified defect.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a localized thermal anomaly observed in the window frame, specifically in the central vertical section of the facade. The thermal image shows a significant temperature difference between the upper and lower parts of the window, with the upper portion appearing as a cooler, purple region and the lower portion as a warmer, orange region. This suggests a localized heat loss or gain, which is indicative of a potential defect in the window seal or insulation. The defect is located within the area E3, which is a window frame, and is consistent with the bounding box coordinates provided. The defect is not a structural issue but rather a thermal issue related to the window's performance.  \n\n- Risk Level  \n  The risk level is MODERATE. The thermal anomaly indicates a potential",
+      "defect_true": "Crack",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0032_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe defect is a thermal anomaly in the window frame, visible in the thermal image as a bright orange region. This indicates a localized heat source, likely due to a thermal bridge or poor insulation. The defect is located at the window frame, which is a common area for thermal issues. The window is a square frame, and the thermal image shows a significant temperature difference from the surrounding wall, suggesting a heat leak. The defect is not visible in the RGB image, but the thermal image provides clear evidence of the issue.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly indicates a potential for heat loss, which can lead to increased energy consumption and reduced comfort. However, the defect is not severe enough to cause immediate structural failure or safety hazards",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0036_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe defect is a localized thermal anomaly observed in the glass panel at the specified coordinates. The thermal image shows a distinct area of elevated temperature, particularly in the upper right quadrant of the panel, with a temperature gradient that suggests a localized heat source. The anomaly is not uniform and appears to be concentrated in a small region, which may indicate a defect in the glass or a structural issue. The reflection in the glass shows a distorted view of the surrounding environment, but the thermal signature is distinct and not consistent with normal environmental conditions.  \n\n- Risk Level  \nThe risk level is MODERATE. The thermal anomaly is not severe enough to cause immediate structural failure, but it may lead to long-term thermal stress on the glass, potentially affecting the integrity of the building envelope",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0004_V.jpg",
+      "pred": "Severity: MINOR\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n\n- Defect Identification  \nThe image shows a window with a partially covered or opaque panel, likely a roller blind or a similar type of window cover. The defect is located on the facade of a building, specifically in the area of a window frame. The thermal image reveals a significant temperature difference, with the window area appearing much hotter than the surrounding wall, indicating a potential thermal bridge or heat loss. The defect is located at the window frame, and the thermal image shows a localized area of MODERATE temperature, which may suggest a thermal insulation issue.  \n\n- Risk Level  \nThe risk level is moderate due to the presence of a thermal anomaly, which could lead to increased energy consumption and potential condensation issues. The defect is not severe enough to cause immediate structural damage, but it may contribute to long",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MINOR",
+      "severity_pred": "MINOR"
+    },
+    {
+      "image_id": "DJI_20251003085247_0015_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Unspecified defect\n\nTask A — explainable diagnosis  \n- Defect Identification  \nThe defect is a visible darkened area on the facade of a building, located at the window frame. The thermal image shows a significant temperature difference, with the window frame glowing brightly in orange and red, indicating a MODERATE heat transfer. This suggests a thermal bridge or a defect in the window seal. The area is located at the 24th floor, and the defect is centered at coordinates (24.6, 22.96, 77.28) with an elevation of 76.97. The defect is located in the E1 area, which is a non-geometric area tag. The defect is not clearly defined in the BBox, but the thermal image shows a significant temperature difference, indicating a thermal",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Unspecified defect",
+      "severity_true": "MODERATE",
+      "severity_pred": "MODERATE"
+    },
+    {
+      "image_id": "DJI_20251003085247_0082_V.jpg",
+      "pred": "Severity: MODERATE\nDefectType: Crack\n\n[Interpretation aligned to headline: severity treated as MODERATE; defect category as Crack.]\n\nTask A — explainable diagnosis  \n- Defect Identification  \n  The defect is a visible discoloration on the facade, located in the lower portion of the image, near the window frames. The area is a rectangular section of the wall, with a noticeable dark, brownish stain that appears to be a form of surface degradation. The thermal image shows a significant temperature difference, with the affected area appearing much hotter than the surrounding wall, indicating a possible thermal bridge or moisture-related issue. The defect is located in the same area as the window frames, which may be contributing to the thermal anomaly.  \n\n- Risk Level  \n  The defect is classified as MODERATE due to the visible discoloration and thermal anomaly, which may lead to reduced thermal performance and potential moisture accumulation. The risk is moderate because the defect is not",
+      "defect_true": "Unspecified defect",
+      "defect_pred": "Crack",
+      "severity_true": "MAJOR",
+      "severity_pred": "MODERATE"
+    }
+  ]
+}

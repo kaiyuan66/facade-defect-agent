@@ -1,0 +1,7 @@
+{
+  "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+  "chunk_size": 1200,
+  "overlap": 200,
+  "num_chunks": 1218,
+  "dim": 1024
+}

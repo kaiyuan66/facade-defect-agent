@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Hugging Face / training caches (regenerable, often huge)
+**/optimizer.pt
+**/rng_state.pth
+
+# Jupyter
+.ipynb_checkpoints/

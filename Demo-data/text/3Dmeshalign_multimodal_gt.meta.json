@@ -1,0 +1,11 @@
+{
+  "mesh_json": "Demo-data/text/3Dmeshalign.json",
+  "label_json": "Demo-data/image/labels-export-2026-04-28.json",
+  "image_root": "Demo-data/image/20251003094651",
+  "model_path": "Qwen/Qwen3-VL-8B-Instruct",
+  "num_requested": 200,
+  "num_saved": 89,
+  "num_missing_both_images": 111,
+  "num_single_image_fallback": 0,
+  "dry_run": false
+}
