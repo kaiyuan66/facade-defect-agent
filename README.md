@@ -1,6 +1,6 @@
 # Interpretable Multimodal Agents for Facade Defect Detection
 
-![Interpretable multimodal agents overview](asset/overview1.jpg)
+<img src="asset/overview1.jpg" alt="Interpretable multimodal agents overview" width="1960" height="1318" />
 
 ## What Is the Interpretable Multimodal Agent?
 
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ---
 
-## Create your own knowledge base (RAG)
+## Create your own knowledge base 
 
 1. Place **PDF** textbooks under `agent/RAG-knowledge-base/textbook/` (or pass `--textbook_dir`).
 
@@ -42,11 +42,10 @@ pip install -r requirements.txt
 
 ## Multimodal inference
 
-### Batch RGB + thermal + RAG (OpenAI-compatible server)
+### Batch RGB + thermal + RAG 
 
 ```bash
 python agent/run_vl_rag_batch.py \
-  --model Qwen3-VL-8B-Instruct \
   --label_json dataset/image/labels.jsonl \
   --image_root dataset/image/your_session \
   --store_dir agent/RAG-knowledge-base/embedding/store \
