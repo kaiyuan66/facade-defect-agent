@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "RAG-knowledge-base"))
 from embedding.vector_store import LocalVectorStore  # noqa: E402
 
-_DEFAULT_LABEL_JSON = ROOT / "Demo-data/image/labels-export-2026-04-28.json"
+_DEFAULT_LABELS = ROOT / "Demo-data/image/labels.jsonl"
 _DEFAULT_IMAGE_ROOT = ROOT / "Demo-data/image/20251003094651"
 _DEFAULT_STORE_DIR = ROOT / "RAG-knowledge-base/embedding/store"
 _DEFAULT_EMBED_MODEL = os.environ.get("FACADE_EMBEDDING_MODEL", "Qwen/Qwen3-Embedding-0.6B")
@@ -30,6 +30,24 @@ COT_PROMPT_PATH = ROOT / "RAG-knowledge-base/prompt/cot_prompt.md"
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8").strip()
+
+
+def load_annotations(path: Path) -> List[dict]:
+    """Load labels from JSONL (one object per line) or legacy JSON array file."""
+    raw = path.read_text(encoding="utf-8").strip()
+    if not raw:
+        return []
+    if path.suffix.lower() == ".jsonl":
+        out: List[dict] = []
+        for line in raw.splitlines():
+            line = line.strip()
+            if line:
+                out.append(json.loads(line))
+        return out
+    data = json.loads(raw)
+    if isinstance(data, list):
+        return data
+    raise ValueError(f"Unsupported labels format in {path}")
 
 
 def data_url(img_path: Path, max_side: int = 768, quality: int = 85) -> str:
@@ -75,7 +93,12 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--base_url", type=str, default="http://127.0.0.1:18002/v1")
     p.add_argument("--api_key", type=str, default="EMPTY")
     p.add_argument("--model", type=str, default="Qwen3-VL-8B-Instruct")
-    p.add_argument("--label_json", type=Path, default=_DEFAULT_LABEL_JSON, help="Detection export JSON (filename + bbox + label).")
+    p.add_argument(
+        "--label_json",
+        type=Path,
+        default=_DEFAULT_LABELS,
+        help="Annotations: JSONL (one record per line) or JSON array (.json). Default: Demo-data/image/labels.jsonl.",
+    )
     p.add_argument("--image_root", type=Path, default=_DEFAULT_IMAGE_ROOT, help="Root with visual/ and thermal/ subtrees.")
     p.add_argument("--store_dir", type=Path, default=_DEFAULT_STORE_DIR, help="RAG vector store directory.")
     p.add_argument(
@@ -102,7 +125,7 @@ def main() -> None:
 
     visual_map = collect_images(image_root / "visual", "_V")
     thermal_map = collect_images(image_root / "thermal", "_T")
-    labels = json.loads(label_json.read_text(encoding="utf-8"))
+    labels = load_annotations(label_json)
     ann_by_file: Dict[str, List[dict]] = defaultdict(list)
     for item in labels:
         ann_by_file[item["filename"]].append(item)
