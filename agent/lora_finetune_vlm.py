@@ -25,7 +25,7 @@ from transformers import (
 from vl_multimodal_utils import build_messages, build_user_text, normalize_bbox_payload, resolve_data_path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_DEFAULT_SYSTEM_PROMPT = _REPO_ROOT / "RAG-knowledge-base/prompt/system_prompt.md"
+_DEFAULT_SYSTEM_PROMPT = _REPO_ROOT / "agent/RAG-knowledge-base/prompt/system_prompt.md"
 
 
 @dataclass

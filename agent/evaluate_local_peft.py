@@ -58,7 +58,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--system_prompt_file",
         type=Path,
-        default=_REPO_ROOT / "RAG-knowledge-base/prompt/system_prompt.md",
+        default=_REPO_ROOT / "agent/RAG-knowledge-base/prompt/system_prompt.md",
     )
     p.add_argument(
         "--bertscore_model",

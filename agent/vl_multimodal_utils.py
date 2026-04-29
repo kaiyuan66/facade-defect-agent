@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 import torch
 from PIL import Image
 
-# Repository root (parent of `Agent/`), used to resolve relative dataset paths in jsonl.
+# Repository root (parent of `agent/`), used to resolve relative dataset paths in jsonl.
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
