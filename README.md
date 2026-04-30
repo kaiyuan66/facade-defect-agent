@@ -4,7 +4,7 @@
 
 ## What Is the Interpretable Multimodal Agent?
 
-An end-to-end interpretable multimodal agent framework that fuses **3D digital twins**, **visual–thermal perception**, and **RAG-driven engineering guidelines** for standard building defect prognosis.
+An interpretable multimodal agent framework that fuses **3D digital twins**, **visual–thermal perception**, and **RAG-driven engineering guidelines** for standard building defect prognosis.
 
 ---
 
@@ -27,7 +27,6 @@ pip install -r requirements.txt
 2. **Build the vector store** (from repository root):
 
    ```bash
-   export FACADE_EMBEDDING_MODEL="Qwen/Qwen3-Embedding-0.6B"
    python agent/RAG-knowledge-base/embedding/build_vector_store.py \
      --textbook_dir agent/RAG-knowledge-base/textbook \
      --output_dir agent/RAG-knowledge-base/embedding/store \
@@ -42,8 +41,6 @@ pip install -r requirements.txt
 
 ## Multimodal inference
 
-### Batch RGB + thermal + RAG 
-
 ```bash
 python agent/run_vl_rag_batch.py \
   --label_json dataset/image/labels.jsonl \
@@ -52,3 +49,10 @@ python agent/run_vl_rag_batch.py \
   --out_dir result/my_vl_rag_run \
   --num_locations 50
 ```
+---
+
+## 🗂️ Dataset
+
+We provide a demo case in this repository to help you get started and reproduce our core framework. 
+
+**To access the full dataset:** Due to privacy and licensing constraints,please contact the author to request full access.
